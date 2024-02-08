@@ -9,7 +9,10 @@ import json
 st.set_page_config(page_title="Einlfuss der Tonart",
                    page_icon="📈", layout='wide')
 
-df = pd.read_csv('spotify_angereichert_cleaned.csv')
+csv_file_path = 'spotify_angereichert_cleaned.csv'
+
+
+df = pd.read_csv(csv_file_path)
 
 df.drop(['Unnamed: 0'], axis=1, inplace=True)
 
