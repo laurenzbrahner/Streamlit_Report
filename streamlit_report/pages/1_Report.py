@@ -656,7 +656,8 @@ points = alt.Chart(world_df).mark_circle(opacity=0).encode(
 
 final_chart = alt.layer(base, points).configure_title(
     fontSize=25,
-    anchor='start'
+    anchor='start',
+    color="gray"
 )
 
 
