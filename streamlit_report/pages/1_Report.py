@@ -9,7 +9,7 @@ import json
 st.set_page_config(page_title="Report music-trends",
                    page_icon="📈", layout='wide')
 
-csv_file_path = 'spotify_angereichert_cleaned.csv'
+csv_file_path = './spotify_angereichert_cleaned.csv'
 
 
 df = pd.read_csv(csv_file_path)
