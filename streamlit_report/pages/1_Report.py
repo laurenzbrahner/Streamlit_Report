@@ -77,9 +77,9 @@ with col2:
     st.title("Report ***Spotify Trend Analyse***")
 
 st.markdown("""
-Grundlegend gibt es zwei Tonarten, <span style="color: #4ee2e6;">Major(Dur)</span> und <span style="color: #a5ff9e;">Minor(Moll)</span>. Diese Tonarten haben Einfluss auf die Stimmung des Songs, dabei haben songs mit der 
-            Tonart <span style="color: #4ee2e6;">Major</span> eine eher fröhliche und Lebendige Stimmung. Songs mit der Tonart <span style="color: #a5ff9e;">Minor</span> sind dabei eher melancholisch und haben
-            eine traurige Stimmung. In dem untenstehenden Chart wird die Anzahl der Top-Songs mit der jeweiligen Tonart gegebenübergestellt. 
+Grundlegend gibt es zwei Tonarten, <span style="color: #4ee2e6;">Major(Dur)</span> und <span style="color: #a5ff9e;">Minor(Moll)</span>. Diese Tonarten haben Einfluss auf die Stimmung des Songs, dabei haben Songs mit der 
+            Tonart <span style="color: #4ee2e6;">Major</span> eine eher fröhliche und lebendige Stimmung. Songs mit der Tonart <span style="color: #a5ff9e;">Minor</span> sind dabei eher melancholisch und haben
+            eine traurige Stimmung. In dem untenstehenden Chart wird die Anzahl der Top-Songs mit der jeweiligen Tonart gegenübergestellt. 
 """, unsafe_allow_html=True)
 
 col1, col2 = st.columns([3, 2])
@@ -100,7 +100,7 @@ with col2:
     st.markdown("""
     <div style="text-align: center">👎</div>
     <div>
-        Deutlich weniger Top-Songs die Tonart <span style="color: #4ee2e6;">Minor</span> mit: 351 Songs
+        Deutlich weniger Top-Songs haben die Tonart <span style="color: #4ee2e6;">Minor</span> mit: 351 Songs
     </div>
     """, unsafe_allow_html=True)
 
@@ -181,8 +181,7 @@ final_chart = alt.layer(
 st.markdown("""
 Aber auch der Key eines Songs hat einen Einfluss auf die Popularität. Keys
              sind die musikalischen Bausteine, die bestimmen, wie die Musik klingt und sich anhört.
-            In dem untenstehenden Diagramm ist die durschnittliche Anzahl der Spotify Streams 
-            nach dem Key des Songs zu sehen.
+            In dem untenstehenden Diagramm ist die durchschnittliche Anzahl der Spotify-Streams nach dem Key des Songs zu sehen.
  """)
 
 col1, col2 = st.columns([3, 2])
@@ -316,9 +315,9 @@ final_chart = alt.layer(
 
 
 st.markdown("""
-Wann sollten Sie ihren Song releasen? Der Releasezeitpunkt hat einen großen Einfluss auf die Popularität eines Songs.
+Wann sollten sie ihren Song releasen? Der Releasezeitpunkt hat einen großen Einfluss auf die Popularität eines Songs.
 Im untenstehenden Diagramm sind die Anzahl der releasten Top-Songs pro Monat dargestellt. 
-            Über das jahr 2023 waren deutliche Schwankungen zu sehen.
+            Über das Jahr 2023 hinweg waren deutliche Schwankungen zu sehen.
 """)
 
 col1, col2 = st.columns([3, 2])
@@ -419,9 +418,9 @@ combined_chart_filtered = alt.layer(scatter_plot_filtered_with_reg_line + regres
 st.markdown("""
 
 Um wieder zurück zu den musikalischen Merkmalen mit Einfluss auf die Popularität eines Songs zu kommen, schauen wir uns
-die Speechniess der Top-Songs im Jahr 2023 an. Die Speechiness, auf deutsch Sprechanteil, ist der Anteil der gesprochenen Worte
-            im Song. Rap hat Zum Besipiel in den meisten Fällen einen sehr hohen Sprechanteil. In Folgendem Scatter-Plot ist
-            die Anzahl der Top-Songs im Jahre 2023 mit dem jeweiligen Sprechenateil dargestellt.
+die Speechiness der Top-Songs im Jahr 2023 an. Die Speechiness, auf Deutsch Sprechanteil, ist der Anteil der gesprochenen Worte
+            in einem Song. Rap hat zum Beispiel in den meisten Fällen einen sehr hohen Sprechanteil. In folgendem Scatter-Plot ist
+            die Anzahl der Top-Songs im Jahre 2023 mit dem jeweiligen Sprechanteil dargestellt.
                    
             """)
 
@@ -436,8 +435,8 @@ with col2:
                 <br/>
     <div style="text-align: center">👍</div>
     <div>
-        Wie in dem Scatter-Plot zu sehen, haben die meisten Top-Songs einen sehr geringen Sprechanteil, im Bereich von ca: <span style="color: red;">3-8 %</span>.
-                 Die Anzahl der Songs nimmt mit zunehmenden Sprechanteil ab.
+        Wie in dem Scatter-Plot zu sehen, haben die meisten Top-Songs einen sehr geringen Sprechanteil, im Bereich von ca.: <span style="color: red;">3-8 %</span>.
+                 Die Anzahl der Songs nimmt mit zunehmendem Sprechanteil ab.
     </div>
     """, unsafe_allow_html=True)
     st.markdown('----')
@@ -449,7 +448,7 @@ with col2:
 
 
 st.markdown("""
-:point_right: Ihr Song sollte einen :red[geringen] Sprechanteil aufweisen! 
+:point_right: Ihr Song sollte einen :red[geringen] Sprechanteil aufweisen! Achten sie auf Gesang und Melodie. 
 
 """)
 
@@ -517,7 +516,7 @@ st.markdown("""
 
 Ein weiteres musikalisches Merkmal mit Einfluss auf die Popularität eines Songs ist die Energy. Die Energy eines Songs ist ein Maß für seine Intensität und Dynamik,
              basierend auf Faktoren wie Tempo, Lautstärke und Rhythmus. Dazu schauen wir uns die Energy-Werte der Top-Songs im Jahr 2023 an. In diesem Verteilungsdiagramm können sie die Anzahl der 
-            Songs pro Energykategorie sehen. Dabei wird deutlich, dass die Verteilung einer Normalverteilung mit einer leichten linksschiefe gleicht.
+            Songs pro Energykategorie sehen. Dabei wird deutlich, dass die Verteilung einer Normalverteilung mit einer leichten Linksschiefe gleicht.
 
 """)
 
@@ -660,15 +659,15 @@ final_chart = alt.layer(base, points).configure_title(
 
 st.markdown("""
 Auch die geografische Herkunft eines Künstlers spielt eine Rolle in dem Erfolg eines Songs. In der untenstehenden 
-            Map ist die Anzahl der Künstler aus dem jeweiligen Land zu sehen. Je Stärker das Land eingefärbt ist,
-             desto stärker ist die Färbung. 
+            Map ist die Anzahl der Künstler aus dem jeweiligen Land zu sehen. Je stärker das Land eingefärbt ist,
+             desto mehr Top-Künstler hat dieses Land hervorgebracht. 
 """)
 
 final_chart
 
 st.markdown("""
-:point_right: Wie in diesem Diagramm zusehen ist, kommen die meisten Top-Künstler aus englisch- oder spanischsprachigen
-            Ländern. Produzerien sie einen :red[englischen] oder :red[spanischen] Song!
+:point_right: Wie in diesem Diagramm veranschaulicht, kommen die meisten Top-Künstler aus englisch- oder spanischsprachigen
+            Ländern. Produzieren sie einen :red[englischen] oder :red[spanischen] Song!
 """)
 
 st.markdown("---")
@@ -682,3 +681,8 @@ $$
 {Erfolg} = {Tonart(Major)} + {Key(C\#)} + {ReleaseMonat(Jan|Feb)} + {Speechiness(3\%)} + {Energy(65\%)} + {Language(Englisch|Spanisch)}
 $$
 """, unsafe_allow_html=True)
+
+
+# Footer
+st.markdown("---")
+st.markdown("© 2023 Laurenz Brahner - Alle Rechte vorbehalten.")
