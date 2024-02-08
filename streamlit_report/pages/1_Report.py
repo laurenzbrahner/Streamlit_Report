@@ -77,9 +77,9 @@ with col2:
     st.title("Report ***Spotify Trend Analyse***")
 
 st.markdown("""
-Grundlegend gibt es zwei Tonarten, <span style="color: #4ee2e6;">Major(Dur)</span> und <span style="color: #a5ff9e;">Minor(Moll)</span>. Diese Tonarten haben Einfluss auf die Stimmung des Songs, dabei haben Songs mit der 
-            Tonart <span style="color: #4ee2e6;">Major</span> eine eher fröhliche und lebendige Stimmung. Songs mit der Tonart <span style="color: #a5ff9e;">Minor</span> sind dabei eher melancholisch und haben
-            eine traurige Stimmung. In dem untenstehenden Chart wird die Anzahl der Top-Songs mit der jeweiligen Tonart gegenübergestellt. 
+Grundlegend gibt es zwei Tonarten, <span style="color: #4ee2e6;">Major(Dur)</span> und <span style="color: #a5ff9e;">Minor(Moll)</span>. Diese Tonarten haben Einfluss auf die Stimmung des Songs. Songs mit der 
+            Tonart <span style="color: #4ee2e6;">Major</span> haben eine eher fröhliche und lebendige Stimmung. Songs mit der Tonart <span style="color: #a5ff9e;">Minor</span> sind dabei eher melancholisch und haben
+            eine traurige Stimmung. In dem untenstehenden Chart wird die Anzahl der Top-Songs der jeweiligen Tonart gegenübergestellt. 
 """, unsafe_allow_html=True)
 
 col1, col2 = st.columns([3, 2])
@@ -93,20 +93,20 @@ with col2:
                 <br/>
     <div style="text-align: center">👍</div>
     <div>
-        Wie in dem Diagramm zu sehen ist, haben die meisten Top-Songs die Tonart <span style="color: #4ee2e6;">Major</span> mit: <span style="color: red;">445 Songs</span>
+        Wie in dem Diagramm zu sehen ist, haben die meisten Top-Songs die Tonart <span style="color: #4ee2e6;">Major</span>: <span style="color: red;">445 Songs</span>
     </div>
     """, unsafe_allow_html=True)
     st.markdown('----')
     st.markdown("""
     <div style="text-align: center">👎</div>
     <div>
-        Deutlich weniger Top-Songs haben die Tonart <span style="color: #4ee2e6;">Minor</span> mit: 351 Songs
+        Deutlich weniger Top-Songs haben die Tonart <span style="color: #4ee2e6;">Minor</span>: 351 Songs
     </div>
     """, unsafe_allow_html=True)
 
 
 st.markdown("""
-:point_right: Um einen Hit zu Landen sollten daher sie Tonart <span style="color: #4ee2e6;"> <u>Major</u></span> verwenden
+:point_right: Um einen Hit zu landen, sollten sie daher die Tonart <span style="color: #4ee2e6;"> <u>Major</u></span> verwenden
 """, unsafe_allow_html=True)
 
 st.markdown("""-----""")
@@ -195,7 +195,7 @@ with col2:
                 <br/>
     <div style="text-align: center">👍</div>
     <div>
-        Wie in dem Barplot zu sehen ist, haben die meisten Streams, Songs mit dem Key <span style="color: red;">C#</span> mit: ca. <span style="color: red;">610</span>
+        Wie in dem Barplot zu sehen ist, haben Songs mit dem Key <span style="color: red;">C#</span> die meisten Streams: ca. <span style="color: red;">610</span>
                 Millionen Streams
     </div>
     """, unsafe_allow_html=True)
@@ -203,7 +203,7 @@ with col2:
     st.markdown("""
     <div style="text-align: center">👎</div>
     <div>
-        Deutlich weniger Streams haben Songs mit dem Key <span style="color: #4ee2e6;">A</span> mit: ca. 415 Millionen Streams
+        Deutlich weniger Streams haben Songs mit dem Key <span style="color: #4ee2e6;">A</span>: ca. 415 Millionen Streams
     </div>
     """, unsafe_allow_html=True)
 
@@ -418,8 +418,8 @@ combined_chart_filtered = alt.layer(scatter_plot_filtered_with_reg_line + regres
 st.markdown("""
 
 Um wieder zurück zu den musikalischen Merkmalen mit Einfluss auf die Popularität eines Songs zu kommen, schauen wir uns
-die Speechiness der Top-Songs im Jahr 2023 an. Die Speechiness, auf Deutsch Sprechanteil, ist der Anteil der gesprochenen Worte
-            in einem Song. Rap hat zum Beispiel in den meisten Fällen einen sehr hohen Sprechanteil. In folgendem Scatter-Plot ist
+die Speechiness der Top-Songs im Jahr 2023 an. Die Speechiness, auf deutsch Sprechanteil, ist der Anteil der gesprochenen Worte
+            in einem Song. Rap hat zum Beispiel, in den meisten Fällen einen sehr hohen Sprechanteil. In folgendem Scatter-Plot ist
             die Anzahl der Top-Songs im Jahre 2023 mit dem jeweiligen Sprechanteil dargestellt.
                    
             """)
@@ -435,7 +435,7 @@ with col2:
                 <br/>
     <div style="text-align: center">👍</div>
     <div>
-        Wie in dem Scatter-Plot zu sehen, haben die meisten Top-Songs einen sehr geringen Sprechanteil, im Bereich von ca.: <span style="color: red;">3-8 %</span>.
+        Wie in dem Scatter-Plot zu sehen, haben die meisten Top-Songs einen sehr geringen Sprechanteil, im Bereich von ca. <span style="color: red;">3-8 %</span>.
                  Die Anzahl der Songs nimmt mit zunehmendem Sprechanteil ab.
     </div>
     """, unsafe_allow_html=True)
@@ -530,7 +530,7 @@ with col2:
                 <br/>
     <div style="text-align: center">👍</div>
     <div>
-        Wie in dem Verteilungsdiagramm zu sehen ist, sind die meisten Songs in dem Enegery bereich <span style="color: red;">60-70 %</span> einzuordnen.
+        Wie in dem Verteilungsdiagramm zu sehen ist, sind die meisten Songs in dem Energybereich <span style="color: red;"> 60-70 %</span> einzuordnen.
                 
     </div>
     """, unsafe_allow_html=True)
@@ -538,7 +538,7 @@ with col2:
     st.markdown("""
     <div style="text-align: center">👎</div>
     <div>
-        Ein sehr hoher oder geringer Engery-Wert sollte vermieden werden  </div>
+        Ein sehr hoher oder geringer Energy-Wert sollte vermieden werden  </div>
     """, unsafe_allow_html=True)
 
 
@@ -658,7 +658,7 @@ final_chart = alt.layer(base, points).configure_title(
 
 
 st.markdown("""
-Auch die geografische Herkunft eines Künstlers spielt eine Rolle in dem Erfolg eines Songs. In der untenstehenden 
+Auch die geografische Herkunft eines Künstlers spielt eine Rolle im Bezug auf den Erfolg eines Songs. In der untenstehenden 
             Map ist die Anzahl der Künstler aus dem jeweiligen Land zu sehen. Je stärker das Land eingefärbt ist,
              desto mehr Top-Künstler hat dieses Land hervorgebracht. 
 """)
